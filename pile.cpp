@@ -16,7 +16,7 @@ public:
     T pop() {
         if (isEmpty()) {
             std::cout << "Errore: la pila è vuota." << std::endl;
-            return T();  // Ritorna un valore void 
+            return T();  // Ritorna un valore di tipo T 
         }
 
         T topElem = lista.leggilista(1);  // Legge l'elemento in cima alla pila
@@ -28,7 +28,7 @@ public:
     T top() {
         if (isEmpty()) {
             std::cout << "Errore: la pila è vuota." << std::endl;
-            return T();  // Ritorna un valore void 
+            return T();  // Ritorna un valore di tipo T 
         }
         return lista.leggilista(1);  // Legge l'elemento in cima alla pila
     }
